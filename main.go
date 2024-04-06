@@ -1,34 +1,3 @@
-/*
-package main
-import (
-	"flag"
-	"fmt"
-	"sync"
-)
-
-func main() {
-	var cli string
-	var clients int
-	var opt string
-
-	flag.StringVar(&cli, "cli", "curl", "Que cli se va a ejecutar puede ser curl , az ,gcloud, aws ")
-	flag.IntVar(&clients, "clients",2, "Ambiente por defecto d")
-	flag.StringVar(&opt, "opt", "changeit", "optional 1 ")
-	flag.Parse()
-
-	allResults := make([]string, 0)
-	results := make(chan []string, clients) 
-    var wg sync.WaitGroup
-	for i := 0; i < clients; i ++ {
-	    wg.Add(1)
-        go fmt.Println(i)
-    }
-	wg.Wait()
-
-    fmt.Println(allResults)
-    fmt.Println(results)
-
-} */
 package main
 
 import (
